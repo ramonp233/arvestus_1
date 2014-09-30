@@ -27,8 +27,10 @@
           ?>
 
         <h2>Juhuslik pilt</h2>
-        <!--  Sisesta siia kood -->
-
+          <?php
+            $random_picture_number = rand ("1" , "12");
+            echo "<img src='http://users.khk.ee/kaspar.naaber/svp/periood-1/arvestus/images/".$random_picture_number.".jpg'>";
+          ?>
         <h2>Kõikide piltide väljastamine</h2>
         <!--  Sisesta siia kood -->
       </section>
