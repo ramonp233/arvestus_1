@@ -32,7 +32,12 @@
             echo "<img src='http://users.khk.ee/kaspar.naaber/svp/periood-1/arvestus/images/".$random_picture_number.".jpg'>";
           ?>
         <h2>Kõikide piltide väljastamine</h2>
-        <!--  Sisesta siia kood -->
+          <?php
+            for($image_number = 1; $image_number < 13;){
+                echo "<img class='image' src='http://users.khk.ee/kaspar.naaber/svp/periood-1/arvestus/images/".$image_number.".jpg'>";
+                $image_number++;
+            }
+          ?>
       </section>
     </main>
 
