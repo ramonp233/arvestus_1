@@ -11,7 +11,20 @@
     <main id="site-body">
       <section id="site-content">
         <h2>Tingimuslause</h2>
-        <!--  Sisesta siia kood -->
+          <?php
+            $min = "100";
+            $max = "200";
+            $middle = "150";
+            $number = rand ( $min , $max );
+            if($number > $middle){
+                echo "Juhuslik number ".$number." on suurem kui 150.";}
+            elseif($number == $middle){
+                echo "Juhuslik number on täpselt 150.";
+            }
+            else{
+                echo "Juhuslik number ".$number." on väiksem kui 150.";
+            }
+          ?>
 
         <h2>Juhuslik pilt</h2>
         <!--  Sisesta siia kood -->
